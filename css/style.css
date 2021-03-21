@@ -14,32 +14,16 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: inherit;}
 
 /* Шрифт */ 
-@media(min-width:320px) {
-    .container {
-        min-width: 320px;
-    }
-}
 
-@media(min-width:768px) {
-    .container {
-        min-width: 768px;
-    }
-}
-
-@media(min-width:1120px) {
-    .container {
-        min-width: 1120px;
-    }
-}
 
 body {
     font-family: TT Lakes;
-    background-color: F8F8F8;
+    background-color: #F8F8F8;
 }
 
 .container{
-    max-width: 1120px;
     margin: 0 auto;
+    background-color: white;
 }
 
 .wrapper {
@@ -49,7 +33,7 @@ body {
 }
 
 .content {
-    flex: 1 1 auto;
+    display: flex;
 }
 
 .container{
@@ -59,6 +43,45 @@ body {
     height: 88px;
     border-bottom: 1px solid #D9FFF5;
 }
+
+.sheare {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    vertical-align: middle;
+}
+
+@media (max-width:768px) {
+    .content{
+        flex-direction: column;
+    }
+    .header__call,
+    .header__chat,
+    .header__profile,
+    .p2,
+    .sheare {
+        display: none;
+        }
+
+}
+
+@media (max-width:1120px){
+.sheare {
+        display: none;
+        }
+        
+        span {
+display: none;
+}
+}
+
+@media (min-width:1120px) {
+.container {
+  display: none;
+}
+}
+
 
 header {
     max-width: 320px;
@@ -103,6 +126,12 @@ height: 40px;
 text-align: center;
 }
 
+
+
+.sheare > span {
+margin-right: 10px;
+}
+
 nav a:hover {
 box-shadow: inset 0 0 0 2px #B8FFEC;
 }
@@ -129,60 +158,4 @@ a {
     cursor: default;
 }
 
-.main__info {
-    margin: 16px;
-    
-}
 
-.main__more {
-    margin-left: 16px;
-}
-
-.main__image {
-    width: 100%;
-} 
-
-/*
-.nav__page-title {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    text-align: left;
-}
-
-h1 {
-    margin-left: 12px;
-    font-style: bold;
-}
-
-.site-nav {
-    display: flex;
-    flex-flow: row nowrap;
-    margin: 0;
-    align-items: center;
-    padding: 0%;
-}
-
-title {
-    background-color: #F8F8F8;
-}
-
-a {
-    white-space: nowrap;    
-    color: #000;
-    text-decoration: none;
-    cursor: default;
-}
-
-.main-info {
-    padding: 16px;
-    
-}
-
-.more {
-    margin-left: 16px;
-}
-
-.image {
-    width: 100%;
-} 
