@@ -15,6 +15,54 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: inherit;}
 
 /* Шрифт */ 
 
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('TTLakesCondensed-Regular.eot');
+    src: local('TT Lakes Condensed Regular'), local('TTLakesCondensed-Regular'),
+        url('TTLakesCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TTLakesCondensed-Regular.woff') format('woff'),
+        url('TTLakesCondensed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+        url('TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TTLakes-Bold.woff') format('woff'),
+        url('TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Black.eot');
+    src: local('TT Lakes Black'), local('TTLakes-Black'),
+        url('TTLakes-Black.eot?#iefix') format('embedded-opentype'),
+        url('TTLakes-Black.woff') format('woff'),
+        url('TTLakes-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('TTLakesCondensed-ExtraBold.eot');
+    src: local('TT Lakes Condensed ExtraBold'), local('TTLakesCondensed-ExtraBold'),
+        url('TTLakesCondensed-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('TTLakesCondensed-ExtraBold.woff') format('woff'),
+        url('TTLakesCondensed-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: TT Lakes;
+    src: url(/fonts/);
+}
 
 body {
     font-family: TT Lakes;
@@ -71,9 +119,6 @@ body {
         display: none;
         }
         
-        span {
-display: none;
-}
 }
 
 @media (min-width:1120px) {
@@ -82,6 +127,16 @@ display: none;
 }
 }
 
+.icon {
+    vertical-align: middle; 
+    margin-left: 43px; 
+    margin-right: 18px; 
+    font-size: 16px;
+   }
+
+   img {
+    vertical-align: middle; 
+   }
 
 header {
     max-width: 320px;
@@ -109,7 +164,7 @@ header {
     flex-flow: row nowrap;
     align-items: center;
     text-align: left;
-    
+    overflow: scroll;
 }
 
 .nav__site > a {
